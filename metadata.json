@@ -1,0 +1,7 @@
+{
+  "name": "Saku Bendahara",
+  "description": "A mobile-first utility tool for treasurers to record field transactions and export them for reporting.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
