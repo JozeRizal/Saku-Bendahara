@@ -2,7 +2,7 @@
 import React from 'react';
 import { DashboardStats } from '../types';
 import { formatIDR } from '../utils/helpers';
-import { TrendingUp, TrendingDown, Wallet, Target, AlertCircle, Info, ChevronRight } from 'lucide-react';
+import { TrendingUp, TrendingDown, Info, AlertCircle } from 'lucide-react';
 
 interface Props {
   stats: DashboardStats;
@@ -24,8 +24,9 @@ const Dashboard: React.FC<Props> = ({ stats }) => {
     <div className="bg-indigo-600 text-white p-6 rounded-b-[2.5rem] shadow-xl safe-area-top">
       <div className="flex items-center justify-between mb-4">
         <h1 className="text-lg font-semibold opacity-90 tracking-tight">Saku Bendahara</h1>
-        <div className="bg-indigo-500/30 p-2 rounded-full">
-          <Wallet size={20} />
+        {/* Brand Icon Replacement */}
+        <div className="bg-white text-indigo-600 w-9 h-9 flex items-center justify-center rounded-xl font-black text-sm shadow-inner transition-transform active:scale-95">
+          SB
         </div>
       </div>
       
